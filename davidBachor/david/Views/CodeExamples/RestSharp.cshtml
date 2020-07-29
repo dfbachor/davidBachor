@@ -1,0 +1,92 @@
+﻿<div class="container">
+    <br />
+    <br />
+    <br />
+    <h1>RestSharp</h1>
+
+    <h2>POST Example</h2>
+
+    <div class="panel panel-default">
+        <pre>
+        <code>
+                using System;
+                using System.Collections.Generic;
+                using Newtonsoft.Json.Linq;
+                using RestSharp;
+                using RestSharp.Authenticators;
+                using RestSharp.Serialization.Json;
+
+                namespace restsharptutorial
+                {
+                class Program
+                {
+
+                    private static RestClient client = new RestClient("http://localhost:7071/api/");
+                    
+                    static void Main(string[] args)
+                        {
+                        Console.WriteLine("Hello World!");
+
+                        JObject jObjectbody = new JObject();
+                        jObjectbody.Add("name", "Fred");
+
+                        RestRequest request = new RestRequest("function", Method.POST);
+                        request.AddParameter("application/json", jObjectbody, ParameterType.RequestBody);
+
+                        var restResponse = client.Execute(request);
+
+                        ResponseData responseData = SimpleJson.DeserializeObject<ResponseData>(restResponse.Content);
+
+                        return;
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+</div>
+
+
+<h2>GET Example</h2>
+
+<div class="panel panel-default">
+    <pre>
+        <code>
+            using System;
+            using System.Collections.Generic;
+            using Newtonsoft.Json.Linq;
+            using RestSharp;
+            using RestSharp.Authenticators;
+            using RestSharp.Serialization.Json;
+
+            namespace restsharptutorial
+            {
+                class Program
+                {
+                    private static RestClient client = new RestClient("http://localhost:7071/api/");
+                    static void Main(string[] args)
+                    {
+                        Console.WriteLine("Hello World!");
+
+                        RestRequest request = new RestRequest("function", Method.GET);
+                        request.AddParameter("name", "1234");
+
+                        var restResponse = client.Execute(request);
+
+                        ResponseData responseData = SimpleJson.DeserializeObject<ResponseData>(restResponse.Content);
+
+                        var x = responseData;
+
+                        return;
+                    }                    
+                }
+
+                public class ResponseData
+                {
+                    public string name;
+                    public int age;
+                }
+            }
+
+        </code>
+        </pre>
+</div>

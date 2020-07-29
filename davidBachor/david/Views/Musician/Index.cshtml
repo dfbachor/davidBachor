@@ -1,0 +1,217 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section styles{
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="~/css/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/creative.css" rel="stylesheet">
+}
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-bottom" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#top">dbach</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#whereabouts">Whereabouts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="Top">
+
+        <header class="masthead text-center text-white d-flex">
+            <div class="container my-auto">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h1>
+                            <strong>David Bachor - Guitarist</strong>
+                        </h1>
+                        <hr>
+                    </div>
+                    <div class="col-lg-8 mx-auto">
+                        <p class="mb-5">Lets play some music!</p>
+                        <a class="btn btn-info btn-xl js-scroll-trigger" href="#about">Background</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading">Background</h2>
+                    <hr class="light my-4">
+                    <p>Classically trained guitarist with a focus on several genres including classical, jazz, blues, folk and classic rock. I studied classical guitar at West Chester university and jazz guitar with E. Shawn Qaissaunee from Wilmington DE.</p>
+                    <p>Member of the Wilmington Classical Guitar Society and the Lehigh Valley Classical Guitar Society.</p>
+                    <p>Influences: Earl Klugh, Lee Ritenour, Wes Montgomery, Jeff Golub, Jimmy Page, Steve Howe, Bach, Beethoven, John Williams , , , just to name a few.</p>
+                    <p>Please visit my <a href="http://www.bandmix.com/dbach/" target="_blank">Bandmix</a> site for more information.</p>
+                    <a class="btn btn-light btn-xl js-scroll-trigger" href="#whereabouts">Whereabouts!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="whereabouts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Whereabouts</h2>
+                    <hr class="my-4">
+                    <img class="img-responsive img-border img-left" width="200" height="200" src="~/img/picklegig.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>I can be found generally at Da's Pub in Blakeslee, PA on Thursday's nights supporting their open Mic</p>
+                    <p>Please join my friends and I for a night of 'on the fly' music and enjoy the following sample of my playing.</p>
+                    <div align="center">
+                        <audio controls="controls">
+                            <source src="~/mp3/cavatina.mp3" type="audio/mpeg" />
+                            <a href="~/mp3/cavitina.mp3">Cavitina</a>
+                        </audio>
+                    </div>
+                    <a class="btn btn-light btn-xl js-scroll-trigger" href="#portfolio">Music!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-0" id="portfolio">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h2 id="curveSheetMusic" class="intro-text text-center">Music</h2>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-4 roundenBorderCorner" id="pic1">
+                        <a href="~/pdf/AirOnAGString.pdf" class="thumbnail">
+                            <img src="~/img/BachAirthumb.jpg" class="imgmax" alt="Bach - Air On A G String - Solo guitar">
+                        </a>
+                        <h5 align="center">Johann Sebastian Bach - Air On A G String</h5>
+                        <h6 align="center">Solo guitar</h6>
+                        <hr />
+                    </div>
+
+                    <div class="col-sm-4 roundenBorderCorner" id="pic2">
+                        <a href="~/pdf/cavatina.pdf" class="thumbnail">
+                            <img src="~/img/cavatinathumb.jpg" class="imgmax" alt="Stanley Myers - Cavatina - Solo Guitar">
+                        </a>
+                        <h5 align="center">Stanley Myers - Cavatina -Theme from The Deer Hunter</h5>
+                        <h6 align="center">Solo guitar</h6>
+                        <hr />
+                    </div>
+
+                    <div class="col-sm-4 roundenBorderCorner" id="pic3">
+                        <a href="~/pdf/EleanorRigby.pdf" class="thumbnail">
+                            <img src="~/img/rigbythumb.jpg" class="imgmax" alt="Lennon and McCartney - Eleanor Rigby - Guitar Ensemble">
+                        </a>
+                        <h5 align="center">John Lennon & Paul McCartney - Eleanor Rigby</h5>
+                        <h6 align="center">Guitar Ensemble</h6>
+                        <hr />
+                    </div>
+
+                    <div class="col-sm-4 roundenBorderCorner" id="pic4">
+                        <a href="~/pdf/ShapeOfMyHeart.pdf" class="thumbnail">
+                            <img src="~/img/shapethumb.jpg" class="imgmax" alt="Sting - Shape Of My Heart - Guitar Ensemble">
+                        </a>
+                        <h5 align="center">Sting and Dominic Miller - Shape Of My Heart</h5>
+                        <h6 align="center">Guitar Ensemble</h6>
+                        <hr />
+                    </div>
+
+                    <div class="col-sm-4 roundenBorderCorner" id="pic5">
+                        <a href="~/pdf/ViolinConcertoNo1aminorBWV1041.pdf" class="thumbnail">
+                            <img src="~/img/bachantanteaminorthumb.jpg" class="imgmax" alt="Bach - Violin Concerto No. 1 in A Minor, Andante - Solo Guitar">
+                        </a>
+                        <h5 align="center">Johann Sebastian Bach - Violin Concerto No. 1 in A Minor, Andante</h5>
+                        <h6 align="center">Solo guitar</h6>
+                        <hr />
+                    </div>
+
+                    <div class="col-sm-4 roundenBorderCorner" id="pic6">
+                        <a href="~/pdf/SuitedelRecuerd.pdf" class="thumbnail">
+                            <img src="~/img/evocationthumb.jpg" class="imgmax" alt="Jose Luis Merlin - Suite del Recuerdo No. 1 Evocation - Guitar Ensembler">
+                        </a>
+                        <h5 align="center">Jose Luis Merlin - Suite del Recuerdo No. 1 Evocation</h5>
+                        <h6 align="center">Guitar Ensemble</h6>
+                        <hr />
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">Contact!</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-info" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading">Get In Touch!</h2>
+                    <hr class="my-4">
+                    <p class="mb-5">Shoot me an email and we I'll get back to you as soon as possible!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mr-auto text-center">
+                    <p>
+                        <a href="mailto:davidfbachor@gmail.com">
+                            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+                            <br />
+                            davidfbachor@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    @section Scripts{
+
+        <!-- Bootstrap core JavaScript -->
+        @*<script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>*@
+
+        <!-- Plugin JavaScript -->
+        <script src="~/js/jquery.easing.min.js"></script>
+        <script src="~/js/scrollreveal.min.js"></script>
+        <script src="~/js/jquery.magnific-popup.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="~/js/creative.min.js"></script>
+
+    }
